@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Timed Quiz</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="quiz-container">
+    <h1>Timed Quiz</h1>
+    <p id="question"></p>
+    <div id="options-container">
+      <button class="option"></button>
+      <button class="option"></button>
+      <button class="option"></button>
+      <button class="option"></button>
+    </div>
+    <div id="result"></div>
+    <div id="timer">Time: <span id="time-left"></span></div>
+    <button id="start-btn">Start Quiz</button>
+
+    <div id="save-score-container" style="display: none;">
+    <label for="initials">Enter your initials:</label>
+    <input type="text" id="initials" maxlength="3">
+    <button id="save-score-btn">Save Score</button>
+    <div id="final-score"></div>
+    </div>
+
+    <div id="saved-scores-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
